@@ -15,6 +15,7 @@ Exclusão de jogos
 Organização em templates HTML com Jinja2
 Integração com MySQL
 Script automático para criação do banco
+
 🛠️ Tecnologias Utilizadas
 Python 3.10+
 Flask
@@ -23,6 +24,7 @@ Werkzeug (senhas)
 Jinja2 (templates)
 Bootstrap (layout)
 Flask-WTF (caso usado para formulários)
+
 ⚙️ Requisitos para Rodar o Projeto
 Para que o sistema funcione corretamente, é necessário ter:
 
@@ -31,6 +33,7 @@ Para que o sistema funcione corretamente, é necessário ter:
 ✔ Pip instalado
 ✔ Virtualenv (opcional)
 ✔ Script de criação do banco presente em preparabanco/
+
 📁 Estrutura Geral do Projeto (ZIP)
 A versão compactada do sistema contém pastas semelhantes a esta estrutura:
 
@@ -49,6 +52,7 @@ A versão compactada do sistema contém pastas semelhantes a esta estrutura:
 │   ├── login.html
 │   └── editar.html
 └── README.md
+
 🗄️ Estrutura do Banco de Dados
 O banco é criado automaticamente pelo script da pasta preparabanco. Ele gera as seguintes tabelas:
 
@@ -58,12 +62,14 @@ id	INT (PK)	ID do usuário
 nome	VARCHAR	Nome completo
 nickname	VARCHAR	Apelido utilizado para login
 senha	VARCHAR	Senha hasheada
+
 🔹 Tabela jogos
 Campo	Tipo	Descrição
 id	INT (PK)	ID do jogo
 nome	VARCHAR	Nome do jogo
 categoria	VARCHAR	Gênero/categoria
 console	VARCHAR	Console/plataforma
+
 📦 Como Rodar o Sistema
 Abaixo está um passo a passo completo para quem baixar o ZIP pelo Teams.
 
@@ -71,6 +77,7 @@ Abaixo está um passo a passo completo para quem baixar o ZIP pelo Teams.
 No terminal, na pasta do projeto:
 
 pip install -r requirements.txt
+
 2️⃣ Criar o banco de dados automaticamente
 Dentro da pasta do projeto, execute:
 
@@ -79,6 +86,7 @@ O script criará o banco, tabelas e dados iniciais.
 
 3️⃣ Rodar o servidor Flask
 flask run
+
 4️⃣ Abrir no navegador
 http://127.0.0.1:5000
 
@@ -86,9 +94,11 @@ http://127.0.0.1:5000
 O script já cria o banco no MySQL — não é necessário criar manualmente.
 Se o MySQL pedir usuário e senha diferentes, ajuste dentro do script prepara_banco.py.
 Recomenda-se rodar em ambiente virtual (venv).
+
 🧑‍💻 Melhorias Futuras
 Adicionar upload real de imagens
 Criar API REST
 Implementar paginação
 Tornar o layout mais moderno
+
 Dupla: Flávio Gonçalves e Mayara Marina
